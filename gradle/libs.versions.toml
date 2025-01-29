@@ -1,0 +1,84 @@
+[versions]
+accompanist = "0.37.0"
+agp = "8.8.0"
+androidDesugarJdkLibs = "2.1.4"
+activityCompose = "1.10.0"
+androidxAppCompat = "1.7.0"
+composeBom = "2025.01.00"
+androidxComposeCompiler = "1.5.14"
+androidxComposeRuntimeTracing = "1.0.0-beta01"
+coreKtx = "1.15.0"
+androidxHiltNavigationCompose = "1.2.0"
+lifecycleRuntimeKtx = "2.8.7"
+androidxNavigation = "2.8.5"
+hilt = "2.55"
+hiltExt = "1.2.0"
+kotlin = "2.1.0"
+kotlinxCoroutines = "1.10.1"
+kotlinxSerializationJson = "1.8.0"
+ksp = "2.1.0-1.0.29"
+lint = "31.8.0"
+protobufPlugin = "0.9.4"
+room = "2.6.1"
+timber = "5.0.1"
+compose = "1.7.5"
+composeMaterial3 = "1.3.1"
+androidxDataStore = "1.1.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+compose-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+room = { id = "androidx.room", version.ref = "room" }
+jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+
+# Plugins defined by this project
+template-android-application = { id = "template.android.application", version = "unspecified" }
+template-android-hilt = { id = "template.android.hilt", version = "unspecified" }
+template-android-library = { id = "template.android.library", version = "unspecified" }
+template-android-feature = { id = "template.android.feature", version = "unspecified" }
+template-android-room = { id = "template.android.room", version = "unspecified" }
+template-android-application-compose = { id = "template.android.application.compose", version = "unspecified" }
+template-android-library-compose = { id = "template.android.library.compose", version = "unspecified" }
+
