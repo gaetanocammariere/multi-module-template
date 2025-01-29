@@ -16,3 +16,4 @@ local.properties
 /.idea/
 /.gradle/
 /.kotlin/
+/build-logic/convention/build/
